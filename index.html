@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <script src="scripts.js " defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+<body>
+    <div class="todo-container">
+        <header class="todo-cabecalho">
+            <h1 class="titulo-form">To Do list</h1>
+        </header>
+        <form id="todo-form">
+            <div class="first">
+                <p class="tarefa">Adicione sua tarefa:</p>
+                <input type="text" id="tarefa" placeholder="O que você vai fazer?">
+                <button type="submit"><i class="fas fa-plus"></i></button><br> 
+            </div>
+            <div class="second">
+                <h4 class="pesquisa">Pesquisar:</h4>
+                <input type="text" id="pesquisa" placeholder="Buscar...">
+                <button type="submit"><i class="fab fa-searchengin"></i></button>
+            </div>
+            <div class="third">
+            <h4 class="filtro-titulo">Filtrar:</h4>
+                <select name="filtro" id="filtro">
+                    <option class="opcao" value="Todos">Todos</option>
+                    <option class="opcao" value="Afazer">A fazer</option>
+                    <option class="opcao" value="feitos">Feitos</option>
+                </select>
+            </div>
+            <div class="fourth">
+                <p class="edit">Edite sua tarefa:</p>
+                <input type="text" id="edit" placeholder="Edite sua tarefa...">
+                <button type="submit"><i class="fas fa-check-double"></i></button>
+                <button type="submit" id="cancelar"><i class="fas fa-ban"></i></button>
+            </div>
+            <div class="todo-list" id="todo-list">
+                <div>
+                    <div class="item-list done">
+                        <h4>Estou fazendo algo...</h4>
+                        <button class="finish-todo"><i class="fas fa-check"></i></button>
+                        <button class="edit-todo"><i class="fas fa-pen"></i></button>
+                        <button class="remove-todo"><i class="fab fa-xing"></i></button>
+                    </div>    
+                </div>   
+                <div>
+                    <div class="item-list">
+                        <h4>Estou fazendo algo...</h4>
+                        <button class="finish-todo"><i class="fas fa-check"></i></button>
+                        <button class="edit-todo"><i class="fas fa-pen"></i></button>
+                        <button class="remove-todo"><i class="fab fa-xing"></i></button>
+                    </div>  
+                </div>  
+            </div>
+
+            
+
+
+        </form>
+    </div>
+    
+</body>
+</html>

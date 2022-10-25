@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #fff ;
+}
+body{
+    background-image: url('https://source.unsplash.com/1600x900/?work');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20rem;
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-cabecalho{
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.tarefa{
+    padding: 4px;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.first{
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    text-align: left;
+}
+
+.second{
+    border-bottom: 1px solid#ccc;
+    padding: 1rem;
+    text-align: left;
+}
+
+.pesquisa{
+    padding: 4px;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#pesquisa{
+    border: none;
+    outline: none;
+    font-size: 120%;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000000;
+    margin-bottom:  2px;
+
+}
+
+.third{
+    border-bottom: 1px solid#ccc;
+    padding: 1rem;
+    text-align: left;
+}
+
+#filtro{
+    border: none;
+    outline: none;
+    font-size: 70%;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000000;
+    margin-top: 4px;
+}
+
+.opcao{
+    color: #000000;
+}
+
+#tarefa{
+    border: none;
+    outline: none;
+    font-size: 120%;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000000;
+    margin-bottom: 2px;
+}
+
+
+.button{
+    border: none;
+    outline: none;
+}
+
+.fourth{
+    border-bottom: 1px solid#ccc;
+    padding: 1rem;
+    text-align: left;
+}
+
+#edit{
+    border: none;
+    outline: none;
+    font-size: 120%;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000000;
+    margin-bottom: 2px;
+    display: flex;
+}
+
+button{
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    
+}
+
+button:hover{
+    background-color: #102f5e;
+    color: #fff;
+}
+
+button i{
+    color: #102f5e;
+}
+
+button:hover > i{
+    color: #fff;
+}
+
+.edit{
+    padding: 4px;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    align-items: center;
+    
+}
+
+.todo-list{
+   
+    
+}
+
+.item-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.item-list h4{
+    flex: 1;
+    font-size: .9rem;
+}
+
+.item-list button{
+    margin-left: 0.4rem;
+}
+
+.done{
+    background-color: #395169;
+}
+
+.done h4{
+     color: #fff;
+     text-decoration: line-through;
+     font-style: italic;
+}
