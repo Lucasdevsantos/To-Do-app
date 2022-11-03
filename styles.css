@@ -20,9 +20,9 @@ body{
     flex-direction: column;
     max-width: 450px;
     margin: 3rem auto 0;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     padding: 1.5rem;
     border-radius: 15px;
@@ -111,6 +111,7 @@ body{
     border-bottom: 1px solid#ccc;
     padding: 1rem;
     text-align: left;
+    
 }
 
 #edit{
@@ -161,18 +162,21 @@ button:hover > i{
 
 .todo{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #ccc;
     padding: 1rem;
     align-items: center;
-    
 }
 
-.todo-list{
-   
-    
+.todo h4{
+    flex: 1;
+    font-size: 0.9rem;
 }
+
+.todo button{
+    margin-left: 0.4rem;
+}
+
 
 .item-list{
     display: flex;
@@ -185,7 +189,7 @@ button:hover > i{
 
 .item-list h4{
     flex: 1;
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 .item-list button{

@@ -15,17 +15,17 @@
             <h1 class="titulo-form">To Do list</h1>
         </header>
         <form id="todo-form">
-            <div class="first">
+            <div class="first" id="tarefa-form">
                 <p class="tarefa">Adicione sua tarefa:</p>
                 <input type="text" id="tarefa" placeholder="O que você vai fazer?">
                 <button type="submit"><i class="fas fa-plus"></i></button><br> 
             </div>
-            <div class="second">
+            <div class="second" id="pesquisa-form">
                 <h4 class="pesquisa">Pesquisar:</h4>
                 <input type="text" id="pesquisa" placeholder="Buscar...">
                 <button type="submit"><i class="fab fa-searchengin"></i></button>
             </div>
-            <div class="third">
+            <div class="third"  id="todo-filtro">
             <h4 class="filtro-titulo">Filtrar:</h4>
                 <select name="filtro" id="filtro">
                     <option class="opcao" value="Todos">Todos</option>
@@ -33,13 +33,13 @@
                     <option class="opcao" value="feitos">Feitos</option>
                 </select>
             </div>
-            <div class="fourth">
+            <div class="fourth" hidden id="edit-form">
                 <p class="edit">Edite sua tarefa:</p>
                 <input type="text" id="edit" placeholder="Edite sua tarefa...">
-                <button type="submit"><i class="fas fa-check-double"></i></button>
-                <button type="submit" id="cancelar"><i class="fas fa-ban"></i></button>
+                <button type="submit" id="edit-check"><i class="fas fa-check-double"></i></button>
+                <button id="cancelar"><i class="fas fa-ban"></i></button>
             </div>
-            <div class="todo-list" id="todo-list">
+            <div class="todo-list" id="list-todo">
                 <div>
                     <div class="item-list done">
                         <h4>Estou fazendo algo...</h4>
